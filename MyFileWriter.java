@@ -11,6 +11,7 @@ public class MyFileWriter {
         String fileName3 = "example3.txt";
         String fileName4 = "example4.txt";
         String fileName5 = "example5.txt";
+        //this is my commit today
 
         // 1. Using FileWriter
         try (FileWriter writer = new FileWriter(fileName1)) {
