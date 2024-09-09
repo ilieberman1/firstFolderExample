@@ -4,6 +4,15 @@ import java.nio.file.*;
 import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
+    private static void printFileSize(String fileName) {
+        // Implementation goes here
+        File file = new File(fileName);
+        System.out.println(file.length());
+
+
+
+
+    }
     public static void main(String[] args) {
         //String data = "Hello, World!";
         // String fileName1 = "example1.txt";
@@ -29,9 +38,12 @@ public class MyFileWriter {
             // Files.move(,hiddenFolder.resolve(source.regularFile), REPLACE_EXISTING);
             Path regularFileName = hiddenFolderName.resolve(regularFile);
            Files.write(regularFileName, topSecretData.getBytes(StandardCharsets.UTF_8));
+           
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+        printFileSize(passwordFile);
+
     }
 }
