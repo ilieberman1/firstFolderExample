@@ -4,6 +4,10 @@ import java.nio.file.*;
 import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
+    private static void printTotalFileSize(String... fileNames) {
+    
+        System.out.println("Total size of all files: ...TBD... bytes");
+    }
     public static void main(String[] args) {
         //String data = "Hello, World!";
         // String fileName1 = "example1.txt";
